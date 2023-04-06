@@ -1,0 +1,31 @@
+####
+POST http://localhost:3000/crud/persona HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "Roger",
+    "age":"2"
+}
+
+####
+GET http://localhost:3000/crud/persona HTTP/1.1
+
+####
+GET http://localhost:3000/crud/persona/638d382f14f74bfee38fbdbc HTTP/1.1HTTP/1.1
+
+####
+PUT http://localhost:3000/crud/persona/638d382f14f74bfee38fbdbc HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "Jhon",
+    "age":"2",
+    "status":"SINGLE",
+    "sex":"hombre"
+}
+
+####
+DELETE http://localhost:3000/crud/persona/638a8d99c6bb5e19c357ef8d HTTP/1.1
+
+
+
